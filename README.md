@@ -141,3 +141,27 @@ python main.py run
 ```
 python main.py get_all
 ```
+
+
+<br /><br />
+
+<hr />
+
+# Future works
+- Additional column data type support
+  - currently available data type : CHAR, INTEGER, BOOLEAN
+- Add logging feature instead print statements
+
+
+
+<br /><br />
+
+<hr />
+
+# Questions
+
+* COLUMN WIDTH on "schema.csv" file
+  - "author_name" column width is 10, however output shows more than 10 characters. Output shown on the description seems wrong?
+  - "books_authored_count" column width is 2, and output shows two digits. How to cut or limit the integer data?
+  - NEED more detail description or clarifications.
+
