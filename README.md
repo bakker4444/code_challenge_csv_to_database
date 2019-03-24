@@ -56,3 +56,69 @@ Mark Twain       | False    | 03                  |
 <hr />
 
 <br /><br /><br />
+
+
+# Solution
+
+## Configuration
+<hr />
+
+## 1. Database Setup
+Run a PostgreSQL docker container  
+
+### Container Info
+- name : postgres-0
+- password : password (**SET YOUR PASSWORD**, for this particular example, I will using just "password" )
+- detached mode
+- port : 5432
+
+```
+docker run --name postgres-0 -e POSTGRES_PASSWORD=password -d -p 5432:5432 postgres
+```
+
+## 2. .env File Setup
+
+make a file named ".env". Information on .env file is for postgresql environment variables. For this particular example, I will use the information shown on the below. **Change the parameters on your discretion.**
+
+```
+PG_HOST=localhost
+PG_PORT=5432
+PG_DB=test_db
+PG_USER=postgres
+PG_PW=password
+```
+
+## 3. schema.csv file and data.csv on data_drop folder
+
+make a folder named "data_drop". schema.csv file and data.csv file locates on this folder. I will use the example shown on the description.
+
+
+## 4. Virtual Environment Setup
+
+I use the virtualenv package for setup python version. I use python 3.7.2 version for this particular example.
+
+* setup virtualenv & activate the environment
+```
+virtualenv venv --python=python3.7
+source ./venv/bin/activate
+```
+
+* (cf) Deactivate the environment
+```
+deactivate
+```
+
+## 5. (Required) Python Package Install
+
+- psycopg2
+- python-dotenv
+
+I used two packages, psycopg2 for PostgreSQL, and python-dotenv for setting up the environments.
+
+```
+pip install -r requirements.txt
+```
+
+<br /><br />
+
+<hr />
