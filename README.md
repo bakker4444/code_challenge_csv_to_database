@@ -63,6 +63,15 @@ Mark Twain       | False    | 03                  |
 ## Configuration
 <hr />
 
+## 0. Clone this repository
+
+clone the repository and move to the directory
+
+```
+git clone https://github.com/bakker4444/code_challenge_csv_to_database
+cd code_challenge_csv_to_database
+```
+
 ## 1. Database Setup
 Run a PostgreSQL docker container  
 
