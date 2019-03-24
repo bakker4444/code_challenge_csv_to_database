@@ -122,3 +122,22 @@ pip install -r requirements.txt
 <br /><br />
 
 <hr />
+
+# Running Script
+
+<br />
+
+## 1. Convert input files to database
+run python file with run argument
+```
+python main.py run
+```
+
+<br /><br />
+
+## 2. Getting all data from DB
+(additional feature - debugging purpose)  
+
+```
+python main.py get_all
+```
